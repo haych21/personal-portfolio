@@ -5,19 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HAYCH | Web Developer</title>
 
+    <script src="main.js" defer></script>
+
     <!-- Standard Favicons -->
+    <link rel="icon" type="image/x-icon" href="./favicons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
 
-<link rel="icon" type="image/x-icon" href="./favicons/favicon.ico">
-<link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+    <!-- Apple Touch Icon (iOS Home Screen) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
 
-<!-- Apple Touch Icon (iOS Home Screen) -->
-<link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+    <!-- Web Application Manifest -->
+    <link rel="manifest" href="./favicons/site.webmanifest">
 
-<!-- Web Application Manifest -->
-<link rel="manifest" href="./favicons/site.webmanifest">
-    <!-- Tailwind CSS CDN -->
- <link rel="stylesheet" href="./output.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./output.css">
 
     <!-- Fast 60FPS+ Hardware-Accelerated Animations -->
     <style>
@@ -38,33 +40,57 @@
         .delay-3 { transition-delay: 0.15s; }
     </style>
 </head>
+
 <body class="bg-cream-100 text-cream-900 antialiased">
 
-    <!-- NAVIGATION (Solid bg for high performance) -->
+    <!-- NAVIGATION -->
     <nav class="border-b border-cream-200 sticky top-0 bg-cream-100 z-50">
         <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between text-sm">
-            <a href="index.html" class="font-medium text-cream-950 tracking-tight text-base">HAYCH</a>
-            
+
+            <a href="index.html" class="font-medium text-cream-950 tracking-tight text-base">
+                HAYCH
+            </a>
+
             <div class="flex items-center space-x-8 text-cream-700">
-                <a href="#projects" class="hover:text-cream-950 transition-colors">Projects</a>
-                <a href="#guarantee" class="hover:text-cream-950 transition-colors">Our Process</a>
-                <a href="#services" class="hover:text-cream-950 transition-colors">Offers</a>
+                <a href="#projects" class="hover:text-cream-950 transition-colors">
+                    Projects
+                </a>
+
+                <a href="#guarantee" class="hover:text-cream-950 transition-colors">
+                    Our Process
+                </a>
+
+                <a href="#services" class="hover:text-cream-950 transition-colors">
+                    Offers
+                </a>
             </div>
 
-            <a href="https://whop.com/your-store-handle" target="_blank" class="text-xs border border-cream-300 bg-cream-50 text-cream-900 px-4 py-1.5 rounded-full hover:border-cream-800 transition-all shadow-sm">
+            <a
+                href="https://whop.com/your-store-handle"
+                target="_blank"
+                class="text-xs border border-cream-300 bg-cream-50 text-cream-900 px-4 py-1.5 rounded-full hover:border-cream-800 transition-all shadow-sm">
                 Whop Store ↗
             </a>
+
         </div>
     </nav>
+
 
     <main class="max-w-5xl mx-auto px-6">
 
         <!-- HERO SECTION -->
         <section class="py-20 md:py-28 border-b border-cream-200 reveal">
+
             <div class="max-w-2xl">
+
                 <div class="inline-flex items-center gap-2 text-xs font-mono text-cream-700 px-3 py-1 bg-cream-200/60 rounded-full mb-6">
+
                     <span class="w-2 h-2 rounded-full bg-emerald-600"></span>
-                    <span>Taking on initial client projects</span>
+
+                    <span>
+                        Taking on initial client projects
+                    </span>
+
                 </div>
 
                 <h1 class="text-3xl sm:text-5xl font-medium text-cream-950 tracking-tight leading-snug">
@@ -76,21 +102,34 @@
                 </p>
 
                 <div class="mt-8 flex items-center gap-6 text-sm">
-                    <a href="#projects" class="bg-cream-950 text-cream-50 px-5 py-2.5 rounded font-medium hover:bg-cream-800 transition-colors shadow-sm">
+
+                    <a
+                        href="#projects"
+                        class="bg-cream-950 text-cream-50 px-5 py-2.5 rounded font-medium hover:bg-cream-800 transition-colors shadow-sm">
                         View Sample Projects
                     </a>
-                    <a href="#services" class="text-cream-700 hover:text-cream-950 transition-colors flex items-center gap-1">
-                        See Pricing <span class="text-xs">↓</span>
+
+                    <a
+                        href="#services"
+                        class="text-cream-700 hover:text-cream-950 transition-colors flex items-center gap-1">
+                        See Pricing
+                        <span class="text-xs">↓</span>
                     </a>
+
                 </div>
+
             </div>
+
         </section>
 
-                <!-- FREE CHECKLIST -->
+
+        <!-- FREE CHECKLIST -->
         <section class="py-12 border-b border-cream-200 reveal">
+
             <div class="bg-cream-50 border border-cream-200 rounded-lg p-6 md:p-8 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-                
+
                 <div class="max-w-xl">
+
                     <span class="text-xs font-mono uppercase tracking-widest text-cream-400">
                         Free Resource
                     </span>
@@ -104,228 +143,523 @@
                         performance, mobile responsiveness, SEO, accessibility,
                         and the final checks to make before going live.
                     </p>
+
                 </div>
 
-                <a href="#checklist"
-                class="shrink-0 text-center text-xs text-cream-900 bg-cream-200/70 hover:bg-cream-200 px-5 py-2.5 rounded font-medium transition-colors">
+
+                <button
+                    type="button"
+                    id="openChecklist"
+                    class="shrink-0 text-center text-xs text-cream-900 bg-cream-200/70 hover:bg-cream-200 px-5 py-2.5 rounded font-medium transition-colors">
                     Get the Free Checklist ↗
-                </a>
+                </button>
 
             </div>
+
         </section>
-        
+
+
+        <!-- CHECKLIST MODAL -->
+        <div
+            id="checklistModal"
+            class="fixed inset-0 z-[100] hidden items-center justify-center px-4"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="checklistTitle">
+
+            <!-- Background overlay -->
+            <div
+                id="checklistOverlay"
+                class="absolute inset-0 bg-black/40">
+            </div>
+
+
+            <!-- Modal -->
+            <div class="relative z-10 w-full max-w-md bg-cream-50 border border-cream-200 rounded-lg p-6 md:p-8 shadow-xl">
+
+                <!-- Close button -->
+                <button
+                    type="button"
+                    id="closeChecklist"
+                    class="absolute top-4 right-4 text-cream-500 hover:text-cream-950 text-xl leading-none"
+                    aria-label="Close checklist">
+                    &times;
+                </button>
+
+
+                <span class="text-xs font-mono uppercase tracking-widest text-cream-400">
+                    Free Resource
+                </span>
+
+                <h2
+                    id="checklistTitle"
+                    class="text-xl font-medium text-cream-950 mt-2">
+                    Get the Free Checklist
+                </h2>
+
+                <p class="text-sm text-cream-700 leading-relaxed mt-2 mb-6">
+                    Enter your email and I'll send you my 10-point Website Launch Checklist.
+                </p>
+
+
+                <!-- KIT FORM -->
+                <div>
+
+                    <script
+                        async
+                        data-uid="441f2a4f3c"
+                        src="https://haych.kit.com/441f2a4f3c/index.js">
+                    </script>
+
+                </div>
+
+            </div>
+
+        </div>
+
 
         <!-- SAMPLE PROJECTS SECTION -->
         <section id="projects" class="py-20 border-b border-cream-200">
+
             <div class="flex items-end justify-between mb-12 reveal">
+
                 <div>
-                    <h2 class="text-xs font-mono uppercase tracking-widest text-cream-400">Personal Work & Demos</h2>
-                    <p class="text-lg text-cream-950 font-medium mt-1">A look at what I can build</p>
+
+                    <h2 class="text-xs font-mono uppercase tracking-widest text-cream-400">
+                        Personal Work & Demos
+                    </h2>
+
+                    <p class="text-lg text-cream-950 font-medium mt-1">
+                        A look at what I can build
+                    </p>
+
                 </div>
+
             </div>
 
+
             <div class="space-y-16">
+
                 <!-- Project 1 -->
                 <div class="group grid grid-cols-1 md:grid-cols-12 gap-8 items-center reveal">
+
                     <div class="md:col-span-7 bg-cream-50 rounded-lg overflow-hidden border border-cream-200 shadow-sm">
-                        <img src="images/ember-coffee.png" alt="Project preview" decoding="async" class="w-full h-72 md:h-80 object-contain opacity-90 transition-opacity duration-300">
+
+                        <img
+                            src="images/ember-coffee.png"
+                            alt="Project preview"
+                            decoding="async"
+                            class="w-full h-72 md:h-80 object-contain opacity-90 transition-opacity duration-300">
+
                     </div>
+
+
                     <div class="md:col-span-5 space-y-4">
-                        <span class="text-xs font-mono text-cream-400">Concept Build 01 — Multi-Page Site</span>
-                        <h3 class="text-xl font-medium text-coffee">Ember Coffee House</h3>
+
+                        <span class="text-xs font-mono text-cream-400">
+                            Concept Build 01 — Multi-Page Site
+                        </span>
+
+                        <h3 class="text-xl font-medium text-coffee">
+                            Ember Coffee House
+                        </h3>
+
                         <p class="text-sm text-cream-700 leading-relaxed">
-                           A cozy digital storefront crafted to capture the café's daily rhythm. Features a clean, easy-to-read menu, a photo gallery of the space, and a community wall highlighting guest thoughts and favorite orders.
+                            A cozy digital storefront crafted to capture the café's daily rhythm. Features a clean, easy-to-read menu, a photo gallery of the space, and a community wall highlighting guest thoughts and favorite orders.
                         </p>
+
                         <div class="flex flex-wrap gap-2 pt-2">
-                            <span class="text-[11px] font-mono text-cream-800 px-2.5 py-1 bg-cream-200/60 rounded">HTML & CSS</span>
-                            <span class="text-[11px] font-mono text-cream-800 px-2.5 py-1 bg-cream-200/60 rounded">JavaScript</span>
+
+                            <span class="text-[11px] font-mono text-cream-800 px-2.5 py-1 bg-cream-200/60 rounded">
+                                HTML & CSS
+                            </span>
+
+                            <span class="text-[11px] font-mono text-cream-800 px-2.5 py-1 bg-cream-200/60 rounded">
+                                JavaScript
+                            </span>
+
                         </div>
+
                         <div class="flex items-center gap-4 pt-2">
-                            <a href="https://embercoffeehouse.netlify.app/home" target="_blank" class="text-xs text-cream-950 font-medium border-b border-cream-300 hover:border-cream-950 pb-0.5 transition-all">
+
+                            <a
+                                href="https://embercoffeehouse.netlify.app/home"
+                                target="_blank"
+                                class="text-xs text-cream-950 font-medium border-b border-cream-300 hover:border-cream-950 pb-0.5 transition-all">
                                 Live Demo ↗
                             </a>
-                            <a href="https://github.com/haych21/ember-coffee" target="_blank" class="text-xs text-cream-700 hover:text-cream-950 border-b border-cream-200 pb-0.5 transition-all">
+
+                            <a
+                                href="https://github.com/haych21/ember-coffee"
+                                target="_blank"
+                                class="text-xs text-cream-700 hover:text-cream-950 border-b border-cream-200 pb-0.5 transition-all">
                                 GitHub Code ↗
                             </a>
+
                         </div>
+
                     </div>
+
                 </div>
+
 
                 <!-- Project 2 -->
                 <div class="group grid grid-cols-1 md:grid-cols-12 gap-8 items-center reveal">
+
                     <div class="md:col-span-7 bg-cream-50 rounded-lg overflow-hidden border border-cream-200 shadow-sm md:order-2">
-                        <img src="images/luma.png" alt="Project preview" decoding="async" class="w-full h-72 md:h-80 object-contain opacity-90 transition-opacity duration-300">
+
+                        <img
+                            src="images/luma.png"
+                            alt="Project preview"
+                            decoding="async"
+                            class="w-full h-72 md:h-80 object-contain opacity-90 transition-opacity duration-300">
+
                     </div>
+
+
                     <div class="md:col-span-5 space-y-4 md:order-1">
-                        <span class="text-xs font-mono text-cream-400">Concept Build 02 — Web App</span>
-                        <h3 class="text-xl font-medium text-orange">Study Dashboard</h3>
+
+                        <span class="text-xs font-mono text-cream-400">
+                            Concept Build 02 — Web App
+                        </span>
+
+                        <h3 class="text-xl font-medium text-orange">
+                            Study Dashboard
+                        </h3>
+
                         <p class="text-sm text-cream-700 leading-relaxed">
                             A sleek dashboard interface designed to track study schedules, assignment deadlines, and daily focus time. Features clean component layouts and fast asset rendering.
                         </p>
+
                         <div class="flex flex-wrap gap-2 pt-2">
-                            <span class="text-[11px] font-mono text-cream-800 px-2.5 py-1 bg-cream-200/60 rounded">HTML & CSS</span>
-                            <span class="text-[11px] font-mono text-cream-800 px-2.5 py-1 bg-cream-200/60 rounded">JavaScript</span>
+
+                            <span class="text-[11px] font-mono text-cream-800 px-2.5 py-1 bg-cream-200/60 rounded">
+                                HTML & CSS
+                            </span>
+
+                            <span class="text-[11px] font-mono text-cream-800 px-2.5 py-1 bg-cream-200/60 rounded">
+                                JavaScript
+                            </span>
+
                         </div>
+
                         <div class="flex items-center gap-4 pt-2">
-                            <a href="https://luma-study.netlify.app/" target="_blank" class="text-xs text-cream-950 font-medium border-b border-cream-300 hover:border-cream-950 pb-0.5 transition-all">
+
+                            <a
+                                href="https://luma-study.netlify.app/"
+                                target="_blank"
+                                class="text-xs text-cream-950 font-medium border-b border-cream-300 hover:border-cream-950 pb-0.5 transition-all">
                                 Live Demo ↗
                             </a>
-                            <a href="https://github.com/haych21/luma" target="_blank" class="text-xs text-cream-700 hover:text-cream-950 border-b border-cream-200 pb-0.5 transition-all">
+
+                            <a
+                                href="https://github.com/haych21/luma"
+                                target="_blank"
+                                class="text-xs text-cream-700 hover:text-cream-950 border-b border-cream-200 pb-0.5 transition-all">
                                 GitHub Code ↗
                             </a>
+
                         </div>
+
                     </div>
+
                 </div>
+
             </div>
+
         </section>
+
 
         <!-- CODE QUALITY SECTION -->
         <section id="guarantee" class="py-20 border-b border-cream-200">
+
             <div class="mb-12 reveal">
-                <h2 class="text-xs font-mono uppercase tracking-widest text-cream-400">Working Principles</h2>
-                <p class="text-lg text-cream-950 font-medium mt-1">What you can expect as a client</p>
+
+                <h2 class="text-xs font-mono uppercase tracking-widest text-cream-400">
+                    Working Principles
+                </h2>
+
+                <p class="text-lg text-cream-950 font-medium mt-1">
+                    What you can expect as a client
+                </p>
+
             </div>
 
+
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
                 <div class="p-6 bg-cream-50 border border-cream-200 rounded-lg shadow-sm space-y-3 reveal delay-1">
-                    <span class="text-xs font-mono text-cream-400">01 — Performance</span>
-                    <h3 class="text-sm font-medium text-cream-950">Speed First</h3>
+
+                    <span class="text-xs font-mono text-cream-400">
+                        01 — Performance
+                    </span>
+
+                    <h3 class="text-sm font-medium text-cream-950">
+                        Speed First
+                    </h3>
+
                     <p class="text-xs text-cream-700 leading-relaxed">
                         No bulky visual site builders or slow templates. Every line of code is written clean for instant page loads.
                     </p>
+
                 </div>
 
+
                 <div class="p-6 bg-cream-50 border border-cream-200 rounded-lg shadow-sm space-y-3 reveal delay-2">
-                    <span class="text-xs font-mono text-cream-400">02 — Collaboration</span>
-                    <h3 class="text-sm font-medium text-cream-950">Live Staging Link</h3>
+
+                    <span class="text-xs font-mono text-cream-400">
+                        02 — Collaboration
+                    </span>
+
+                    <h3 class="text-sm font-medium text-cream-950">
+                        Live Staging Link
+                    </h3>
+
                     <p class="text-xs text-cream-700 leading-relaxed">
                         You get a private staging link to watch the site being built in real-time, letting us make quick adjustments before going live.
                     </p>
+
                 </div>
 
+
                 <div class="p-6 bg-cream-50 border border-cream-200 rounded-lg shadow-sm space-y-3 reveal delay-3">
-                    <span class="text-xs font-mono text-cream-400">03 — Ownership</span>
-                    <h3 class="text-sm font-medium text-cream-950">Full Code Rights</h3>
+
+                    <span class="text-xs font-mono text-cream-400">
+                        03 — Ownership
+                    </span>
+
+                    <h3 class="text-sm font-medium text-cream-950">
+                        Full Code Rights
+                    </h3>
+
                     <p class="text-xs text-cream-700 leading-relaxed">
                         Once complete, 100% of the code repository and asset rights are transferred directly to you. No hidden lock-ins.
                     </p>
+
                 </div>
+
             </div>
+
         </section>
+
 
         <!-- SERVICES & RATES -->
         <section id="services" class="py-20 border-b border-cream-200">
+
             <div class="mb-12 reveal">
-                <h2 class="text-xs font-mono uppercase tracking-widest text-cream-400">Services & Rates</h2>
-                <p class="text-lg text-cream-950 font-medium mt-1">Simple scope, straightforward pricing</p>
+
+                <h2 class="text-xs font-mono uppercase tracking-widest text-cream-400">
+                    Services & Rates
+                </h2>
+
+                <p class="text-lg text-cream-950 font-medium mt-1">
+                    Simple scope, straightforward pricing
+                </p>
+
             </div>
 
+
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
                 <!-- Offer 1 -->
                 <div class="p-6 bg-cream-50 border border-cream-200 rounded-lg flex flex-col justify-between hover:border-cream-300 transition-colors shadow-sm reveal delay-1">
+
                     <div>
-                        <span class="text-xs font-mono text-cream-400">Starter</span>
-                        <h3 class="text-lg font-medium text-cream-950 mt-2">Landing Page</h3>
+
+                        <span class="text-xs font-mono text-cream-400">
+                            Starter
+                        </span>
+
+                        <h3 class="text-lg font-medium text-cream-950 mt-2">
+                            Landing Page
+                        </h3>
+
                         <p class="text-xs text-cream-700 mt-2 leading-relaxed">
                             A single-page website custom-coded for a project, app launch, or service.
                         </p>
-                        
-                        <div class="mt-6 text-xl font-mono text-cream-950">$120</div>
-                        
+
+                        <div class="mt-6 text-xl font-mono text-cream-950">
+                            $120
+                        </div>
+
                         <ul class="mt-6 space-y-2 text-xs text-cream-700">
                             <li>• Custom responsive layout</li>
                             <li>• Contact form setup</li>
                             <li>• Speed & SEO optimization</li>
                             <li>• 3–5 day delivery</li>
                         </ul>
+
                     </div>
 
-                    <a href="https://whop.com/checkout/YOUR_PRODUCT_ID_1" target="_blank" class="mt-8 text-center text-xs text-cream-900 bg-cream-200/70 hover:bg-cream-200 py-2.5 rounded font-medium transition-colors">
+
+                    <a
+                        href="https://whop.com/checkout/YOUR_PRODUCT_ID_1"
+                        target="_blank"
+                        class="mt-8 text-center text-xs text-cream-900 bg-cream-200/70 hover:bg-cream-200 py-2.5 rounded font-medium transition-colors">
                         Select Package ↗
                     </a>
+
                 </div>
+
 
                 <!-- Offer 2 -->
                 <div class="p-6 bg-cream-50 border border-cream-200 rounded-lg flex flex-col justify-between hover:border-cream-300 transition-colors shadow-sm reveal delay-2">
+
                     <div>
-                        <span class="text-xs font-mono text-cream-400">Standard</span>
-                        <h3 class="text-lg font-medium text-cream-950 mt-2">Multi-Page Site</h3>
+
+                        <span class="text-xs font-mono text-cream-400">
+                            Standard
+                        </span>
+
+                        <h3 class="text-lg font-medium text-cream-950 mt-2">
+                            Multi-Page Site
+                        </h3>
+
                         <p class="text-xs text-cream-700 mt-2 leading-relaxed">
                             A full multi-page website suited for small businesses or professional personal brands.
                         </p>
-                        
-                        <div class="mt-6 text-xl font-mono text-cream-950">$299</div>
-                        
+
+                        <div class="mt-6 text-xl font-mono text-cream-950">
+                            $299
+                        </div>
+
                         <ul class="mt-6 space-y-2 text-xs text-cream-700">
                             <li>• Up to 4 custom pages</li>
                             <li>• Content management integration</li>
                             <li>• Mobile optimization & analytics</li>
                             <li>• 7–10 day delivery</li>
                         </ul>
+
                     </div>
 
-                    <a href="https://whop.com/checkout/YOUR_PRODUCT_ID_2" target="_blank" class="mt-8 text-center text-xs text-cream-900 bg-cream-200/70 hover:bg-cream-200 py-2.5 rounded font-medium transition-colors">
+
+                    <a
+                        href="https://whop.com/checkout/YOUR_PRODUCT_ID_2"
+                        target="_blank"
+                        class="mt-8 text-center text-xs text-cream-900 bg-cream-200/70 hover:bg-cream-200 py-2.5 rounded font-medium transition-colors">
                         Select Package ↗
                     </a>
+
                 </div>
+
 
                 <!-- Offer 3 -->
                 <div class="p-6 bg-cream-50 border border-cream-200 rounded-lg flex flex-col justify-between hover:border-cream-300 transition-colors shadow-sm reveal delay-3">
+
                     <div>
-                        <span class="text-xs font-mono text-cream-400">Custom</span>
-                        <h3 class="text-lg font-medium text-cream-950 mt-2">Web App / Custom Build</h3>
+
+                        <span class="text-xs font-mono text-cream-400">
+                            Custom
+                        </span>
+
+                        <h3 class="text-lg font-medium text-cream-950 mt-2">
+                            Web App / Custom Build
+                        </h3>
+
                         <p class="text-xs text-cream-700 mt-2 leading-relaxed">
                             For complex web application builds or custom feature integrations.
                         </p>
-                        
-                        <div class="mt-6 text-xl font-mono text-cream-950">Custom Quote</div>
-                        
+
+                        <div class="mt-6 text-xl font-mono text-cream-950">
+                            Custom Quote
+                        </div>
+
                         <ul class="mt-6 space-y-2 text-xs text-cream-700">
                             <li>• Custom HTML, CSS & JS Architecture</li>
                             <li>• Custom features & integrations</li>
                             <li>• Dedicated Whop/Slack communication</li>
                             <li>• Flexible project timeline</li>
                         </ul>
+
                     </div>
 
-                    <a href="https://whop.com/checkout/YOUR_PRODUCT_ID_3" target="_blank" class="mt-8 text-center text-xs text-cream-900 bg-cream-200/70 hover:bg-cream-200 py-2.5 rounded font-medium transition-colors">
+
+                    <a
+                        href="https://whop.com/checkout/YOUR_PRODUCT_ID_3"
+                        target="_blank"
+                        class="mt-8 text-center text-xs text-cream-900 bg-cream-200/70 hover:bg-cream-200 py-2.5 rounded font-medium transition-colors">
                         Select Package ↗
                     </a>
+
                 </div>
+
             </div>
+
         </section>
+
 
         <!-- FOOTER -->
         <footer class="py-16 text-xs text-cream-700 flex flex-col sm:flex-row items-center justify-between gap-4 reveal">
+
             <div>
                 © 2026 HAYCH. All Rights Reserved.
             </div>
+
             <div class="flex items-center space-x-6 text-cream-800">
-                <a href="https://whop.com/your-store-handle" target="_blank" class="hover:text-cream-950 transition-colors">Whop Store</a>
-                <a href="https://github.com/haych21" target="_blank" class="hover:text-cream-950 transition-colors">GitHub</a>
-                <a href="https://www.instagram.com/_.haychh1" target="_blank" class="hover:text-cream-950 transition-colors">Instagram</a>
-                <a href="https://www.tiktok.com/@haychhh.1" target="_blank" class="hover:text-cream-950 transition-colors">TikTok</a>
+
+                <a
+                    href="https://whop.com/your-store-handle"
+                    target="_blank"
+                    class="hover:text-cream-950 transition-colors">
+                    Whop Store
+                </a>
+
+                <a
+                    href="https://github.com/haych21"
+                    target="_blank"
+                    class="hover:text-cream-950 transition-colors">
+                    GitHub
+                </a>
+
+                <a
+                    href="https://www.instagram.com/_.haychh1"
+                    target="_blank"
+                    class="hover:text-cream-950 transition-colors">
+                    Instagram
+                </a>
+
+                <a
+                    href="https://www.tiktok.com/@haychhh.1"
+                    target="_blank"
+                    class="hover:text-cream-950 transition-colors">
+                    TikTok
+                </a>
+
             </div>
+
         </footer>
 
     </main>
 
+
     <!-- LIGHTWEIGHT INTERSECTION OBSERVER -->
     <script>
         document.addEventListener("DOMContentLoaded", function () {
+
             const observer = new IntersectionObserver((entries, obs) => {
+
                 entries.forEach((entry) => {
+
                     if (entry.isIntersecting) {
+
                         entry.target.classList.add("active");
+
                         obs.unobserve(entry.target);
+
                     }
+
                 });
+
             }, {
                 rootMargin: "0px 0px -20px 0px",
                 threshold: 0.05
             });
 
-            document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+
+            document.querySelectorAll(".reveal").forEach((el) => {
+                observer.observe(el);
+            });
+
         });
     </script>
 
