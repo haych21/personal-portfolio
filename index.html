@@ -6,6 +6,7 @@
     <title>HAYCH | Web Developer</title>
 
     <script src="main.js" defer></script>
+    <script src="https://tally.so/widgets/embed.js"></script>
 
     <!-- Standard Favicons -->
     <link rel="icon" type="image/x-icon" href="./favicons/favicon.ico">
@@ -44,40 +45,102 @@
 <body class="bg-cream-100 text-cream-900 antialiased">
 
     <!-- NAVIGATION -->
-    <nav class="border-b border-cream-200 sticky top-0 bg-cream-100 z-50">
-        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between text-sm">
+<nav class="border-b border-cream-200 sticky top-0 bg-cream-100 z-50">
+    <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between text-sm">
 
-            <a href="index.html" class="font-medium text-cream-950 tracking-tight text-base">
-                HAYCH
+        <!-- LOGO -->
+        <a href="index.html" class="font-medium text-cream-950 tracking-tight text-base">
+            HAYCH
+        </a>
+
+
+        <!-- DESKTOP NAV -->
+        <div class="hidden md:flex items-center space-x-8 text-cream-700">
+
+            <a href="#projects" class="hover:text-cream-950 transition-colors">
+                Projects
             </a>
 
-            <div class="flex items-center space-x-8 text-cream-700">
-                <a href="#projects" class="hover:text-cream-950 transition-colors">
-                    Projects
-                </a>
+            <a href="#process" class="hover:text-cream-950 transition-colors">
+                Our Process
+            </a>
 
-                <a href="#process" class="hover:text-cream-950 transition-colors">
-                    Our Process
-                </a>
+            <a href="#principles" class="hover:text-cream-950 transition-colors">
+                Principles
+            </a>
 
-                <a href="#principles" class="hover:text-cream-950 transition-colors">
-                    Principles
-                </a>
+            <a href="#services" class="hover:text-cream-950 transition-colors">
+                Offers
+            </a>
 
-                <a href="#services" class="hover:text-cream-950 transition-colors">
-                    Offers
-                </a>
-            </div>
+        </div>
+
+
+        <!-- DESKTOP WHOP -->
+        <a
+            href="https://whop.com/your-store-handle"
+            target="_blank"
+            class="hidden md:block text-xs border border-cream-300 bg-cream-50 text-cream-900 px-4 py-1.5 rounded-full hover:border-cream-800 transition-all shadow-sm">
+            Whop Store ↗
+        </a>
+
+
+        <!-- MOBILE MENU BUTTON -->
+        <button
+            type="button"
+            id="mobileMenuButton"
+            class="md:hidden text-cream-950 text-xl"
+            aria-label="Open navigation menu"
+            aria-expanded="false">
+            ☰
+        </button>
+
+    </div>
+
+
+    <!-- MOBILE MENU -->
+    <div
+        id="mobileMenu"
+        class="hidden md:hidden border-t border-cream-200 bg-cream-100">
+
+        <div class="px-6 py-5 flex flex-col gap-5 text-sm text-cream-700">
+
+            <a
+                href="#projects"
+                class="hover:text-cream-950 transition-colors">
+                Projects
+            </a>
+
+            <a
+                href="#process"
+                class="hover:text-cream-950 transition-colors">
+                Our Process
+            </a>
+
+            <a
+                href="#principles"
+                class="hover:text-cream-950 transition-colors">
+                Principles
+            </a>
+
+            <a
+                href="#services"
+                class="hover:text-cream-950 transition-colors">
+                Offers
+            </a>
 
             <a
                 href="https://whop.com/your-store-handle"
                 target="_blank"
-                class="text-xs border border-cream-300 bg-cream-50 text-cream-900 px-4 py-1.5 rounded-full hover:border-cream-800 transition-all shadow-sm">
+                class="text-xs border border-cream-300 bg-cream-50 text-cream-900 px-4 py-2 rounded-full hover:border-cream-800 transition-all shadow-sm text-center">
                 Whop Store ↗
             </a>
 
         </div>
-    </nav>
+
+    </div>
+
+</nav>
 
 
     <main class="max-w-5xl mx-auto px-6">
@@ -586,18 +649,19 @@
                             <li>• Custom responsive layout</li>
                             <li>• Contact form setup</li>
                             <li>• Speed & SEO optimization</li>
-                            <li>• 3–5 day delivery</li>
+                            <li>• Typical turnaround: 3–5 business days</li>
                         </ul>
 
                     </div>
 
 
-                    <a
-                        href="https://whop.com/checkout/YOUR_PRODUCT_ID_1"
-                        target="_blank"
-                        class="mt-8 text-center text-xs text-cream-900 bg-cream-200/70 hover:bg-cream-200 py-2.5 rounded font-medium transition-colors">
-                        Select Package ↗
-                    </a>
+                        <button
+                            type="button"
+                            data-open-enquiry
+                            class="mt-8 text-center text-xs text-cream-900 bg-cream-200/70 hover:bg-cream-200 py-2.5 rounded font-medium transition-colors"
+                            style="cursor: pointer;">
+                            Choose This Package ↗
+                        </button>
 
                 </div>
 
@@ -627,18 +691,18 @@
                             <li>• Up to 4 custom pages</li>
                             <li>• Content management integration</li>
                             <li>• Mobile optimization & analytics</li>
-                            <li>• 7-10 day delivery</li>
+                            <li>• Typical turnaround: 7–10 business days</li>
                         </ul>
 
                     </div>
 
-
-                    <a
-                        href="https://whop.com/checkout/YOUR_PRODUCT_ID_2"
-                        target="_blank"
-                        class="mt-8 text-center text-xs text-cream-900 bg-cream-200/70 hover:bg-cream-200 py-2.5 rounded font-medium transition-colors">
-                        Select Package ↗
-                    </a>
+                        <button
+                            type="button"
+                            data-open-enquiry
+                            class="mt-8 text-center text-xs text-cream-900 bg-cream-200/70 hover:bg-cream-200 py-2.5 rounded font-medium transition-colors"
+                            style="cursor: pointer;">
+                            Choose This Package ↗
+                        </button>
 
                 </div>
 
@@ -667,23 +731,99 @@
                         <ul class="mt-6 space-y-2 text-xs text-cream-700">
                             <li>• Custom HTML, CSS & JS Architecture</li>
                             <li>• Custom features & integrations</li>
-                            <li>• Dedicated Whop/Slack communication</li>
+                            <li>• Direct project communication</li>
                             <li>• Flexible project timeline</li>
                         </ul>
 
                     </div>
 
 
-                    <a
-                        href="https://whop.com/checkout/YOUR_PRODUCT_ID_3"
-                        target="_blank"
-                        class="mt-8 text-center text-xs text-cream-900 bg-cream-200/70 hover:bg-cream-200 py-2.5 rounded font-medium transition-colors">
-                        Select Package ↗
-                    </a>
+                        <button
+                            type="button"
+                            data-open-enquiry
+                            class="mt-8 text-center text-xs text-cream-900 bg-cream-200/70 hover:bg-cream-200 py-2.5 rounded font-medium transition-colors"
+                            style="cursor: pointer;">
+                            Get a Custom Quote ↗
+                        </button>
 
                 </div>
 
             </div>
+
+            <div class="mt-20 text-center reveal">
+            <p class="text-sm text-cream-600 mb-4">
+                Have a project in mind that doesn't fit these packages?
+            </p>
+
+            <button
+                type="button"
+                data-open-enquiry
+                class="text-sm font-medium text-cream-950 border-b border-cream-400 pb-1 hover:border-cream-950 transition-colors"
+                style="cursor: pointer;">
+                Get in touch ↗
+            </button>
+        </div>
+
+        <!-- ENQUIRY POPUP -->
+        <div
+            id="enquiryModal"
+            class="fixed inset-0 z-100 hidden items-center justify-center px-4"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="enquiryTitle">
+
+            <!-- Overlay -->
+            <div
+                id="enquiryOverlay"
+                class="absolute inset-0 bg-black/40">
+            </div>
+
+            <!-- Popup -->
+            <div
+                class="relative z-10 w-full max-w-xl max-h-[90vh] overflow-y-auto bg-cream-100 border border-cream-200 rounded-lg shadow-xl">
+
+                <!-- Close button -->
+                <button
+                    type="button"
+                    id="closeEnquiry"
+                    class="absolute top-4 right-5 z-20 text-cream-500 hover:text-cream-950 text-xl leading-none"
+                    aria-label="Close enquiry form">
+                    &times;
+                </button>
+
+                <div class="p-6 md:p-8">
+
+                    <span class="text-xs font-mono uppercase tracking-widest text-cream-400">
+                        Enquiry
+                    </span>
+
+                    <h2
+                        id="enquiryTitle"
+                        class="text-xl md:text-2xl font-medium text-cream-950 tracking-tight mt-2">
+                        Tell me about your project
+                    </h2>
+
+                    <p class="text-sm text-cream-600 leading-relaxed mt-2 mb-6">
+                        Have a project in mind? Tell me a little about what you're looking for and I'll get back to you.
+                    </p>
+
+                    <!-- Tally Form -->
+                    <div>
+                        <iframe
+                            src="https://tally.so/embed/Xxpr7j?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                            loading="lazy"
+                            width="100%"
+                            height="838"
+                            frameborder="0"
+                            marginheight="0"
+                            marginwidth="0"
+                            title="Tell me about your project">
+                        </iframe>
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
         </section>
 
@@ -773,7 +913,7 @@
                 </summary>
 
                 <div class="pb-7 pr-12 text-sm text-cream-700 leading-relaxed">
-                    Yes. Once the project is complete, the agreed website code and assets are handed over to you. There are no hidden platform lock-ins.
+                    Yes. Once the project is complete, the agreed website code and assets are handed over to you.
                 </div>
 
             </details>
@@ -817,7 +957,7 @@
                 </summary>
 
                 <div class="pb-7 pr-12 text-sm text-cream-700 leading-relaxed">
-                    Packages are purchased through Whop. Once your order is confirmed, I'll get in touch to discuss your requirements and the next steps.
+                    Packages are purchased through Whop. After payment, I’ll get in touch to confirm your project details, required content and next steps before the build begins.
                 </div>
 
             </details>
@@ -840,6 +980,27 @@
 
                 <div class="pb-7 pr-12 text-sm text-cream-700 leading-relaxed">
                     No problem. If your project needs additional pages, features, integrations, or functionality outside the listed scope, we can discuss a custom quote.
+                </div>
+
+            </details>
+
+                    <!-- FAQ 7 -->
+            <details class="group border-t border-b border-cream-200 reveal">
+
+                <summary class="flex items-center justify-between gap-8 py-7 cursor-pointer list-none">
+
+                    <span class="text-base md:text-lg font-medium text-cream-950">
+                       When does the turnaround time start?
+                    </span>
+
+                    <span class="text-cream-500 text-xl font-light transition-transform duration-200 group-open:rotate-45 shrink-0">
+                        +
+                    </span>
+
+                </summary>
+
+                <div class="pb-7 pr-12 text-sm text-cream-700 leading-relaxed">
+                    The typical turnaround begins once payment is confirmed and I’ve received all the required content, assets and project information needed to start the build. Delays in providing these materials or feedback may affect the timeline.
                 </div>
 
             </details>
