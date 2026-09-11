@@ -855,6 +855,9 @@
     .md\:justify-between {
       justify-content: space-between;
     }
+    .md\:object-cover {
+      object-fit: cover;
+    }
     .md\:p-8 {
       padding: calc(var(--spacing) * 8);
     }
